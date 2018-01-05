@@ -4,7 +4,7 @@ export function Mine(props) {
     console.log(props)
     return (
         <div>
-            <h1>Page Mine </h1>
+            <h1>Page Mine (test)</h1>
         </div>
     )
 }
