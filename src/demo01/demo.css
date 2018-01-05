@@ -1,3 +1,5 @@
+@value blue: #0c77f8;
+
 .root {
     border: 1px solid red
 }
@@ -7,5 +9,6 @@
 }
 .child {
     composes: root;
-    color: green
+    /* color: green */
+    color: blue
 }

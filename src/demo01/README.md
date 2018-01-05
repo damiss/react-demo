@@ -88,3 +88,22 @@ class Example extends React.Component {
 ``` html
 <span class="demo__child__2M1Lg demo__root__2N9WP">span</span>
 ```
+## 输入变量
+CSS-Modules 支持使用变量,但是需要安装`PostCSS`和`postcss-modules-values`.在`create-react-app`脚手架中,已经预装好,可以直接用.
+
+在`style.css`中定义变量
+``` css
+@value blue: #0c77f8;
+@value red: #ff0000;
+@value green: #aaf200;
+```
+在`***.css`中引用变量
+``` css
+@value colors: "./colors.css";
+@value blue, red, green from colors;
+
+.title {
+  color: red;
+  background-color: blue;
+}
+```
